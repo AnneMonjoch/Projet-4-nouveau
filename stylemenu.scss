@@ -1,0 +1,364 @@
+
+
+.bouton-precedent {
+    color: black;
+    font-size: 25px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+
+.logo-ohmyfood-menu {
+    width: 50%;
+    padding: 18px;
+    padding-left: 0px;
+    max-width: 500px;
+}
+
+.container-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.menu-image img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+   object-fit: cover;
+    
+}
+
+
+.menu {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-top: 240px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+    
+
+    & > h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    & > h2 {
+            
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: rgb(92, 91, 91);
+       
+    }
+
+}
+
+.button-explore {
+    width: 50%;
+    background-color: #9747FF;
+}
+
+.cellule-menu-text {
+    & > p {
+        margin-top: -6px;
+        margin-left: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px){
+    .menu {
+        background-color: #F6F6F6;
+        width: 80%;
+
+        & > h1 {
+           width: 29%;
+           margin: auto;
+           margin-top: 40px;
+        }
+
+        & > h2 {
+            margin-left: 250px;
+        }
+    }
+
+    section {
+        & > h2 {
+            margin-left: 250px;
+            
+        }
+    }
+
+    .wrap  {
+        width: 60%;
+        margin: auto;
+    }
+    .rectangle {
+        margin-left: 250px;
+    }
+
+    .logo-ohmyfood-menu {
+        width: 15%;
+        margin-right: 50px;
+    }
+
+    .button-explore {
+        width: 15%;
+        background-color: #9747FF;
+    }
+}
+
+.rectangle {
+    width: 60px;
+    height: 3px;
+    background-color: #99E2D0;
+    margin-top: -12px;
+    margin-bottom: 30px;
+  }
+
+  
+.affichage-droite {
+    float: right;
+    margin-top: 1px;
+    position: relative;
+}
+
+.icon-coeur > .fas {
+    position: absolute;
+    left: 0; 
+    color: transparent;
+}
+
+.icon-coeur > .fas:hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    top: 0;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+.display-progressif {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari et Chrome */
+}
+
+.display-rolling {
+    animation: rolling 2s;
+    -moz-animation: rolling 2s;
+    -webkit-animation: rolling 2s;
+}
+
+.cellule-menu {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px lightgray;
+    width: 100%;
+    height: 70px;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
+
+.cellule-menu-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cellule-menu-text {
+    width: 92%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 5px;
+     }
+
+.cellule-menu-text h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+.cellule-menu-prix {
+    width: 10%;
+    padding: 5px;
+    align-self: flex-end;
+}
+
+.cellule-menu-select {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    right: -100px;
+    width: 60px;
+    height: 100%;
+    background: #99E2D0;
+    transition: 0.3s;
+    flex-grow: 1;
+}
+
+
+
+.cellule-menu:hover .cellule-menu-select {
+    transition: 0.3s;
+    right: 0;
+}
+
+.cellule-menu:hover .item-rolling {
+    animation: rolling 0.5s;
+    -moz-animation: rolling 0.5s;
+    -webkit-animation: rolling 0.5s;
+}
+
+.cellule-menu:hover .cellule-menu-text {
+    animation: reduce-text 0.5s;
+    animation-fill-mode: forwards;
+    -moz-animation: reduce-text 0.5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation: reduce-text 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes reduce-text {
+    from {}
+    to {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes reduce-text {
+    from {}
+    to {
+        width: 65%;
+    }
+}
+
+@-webkit-keyframes reduce-text {
+    from {}
+    to {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    @keyframes reduce-text {
+        from {}
+        to {
+            width: 85%;
+        }
+    }
+    
+    @-moz-keyframes reduce-text {
+        from {}
+        to {
+            width: 85%;
+        }
+    }
+    
+    @-webkit-keyframes reduce-text {
+        from {}
+        to {
+            width: 85%;
+        }
+    }
+
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Animation apparition progressive vers le haut */
+
+
+
+/* Animation Rolling */
+
+.container {
+    opacity: 0;
+    animation: fadein 1s forwards;
+  }
+  
+  .appear {
+    opacity: 0;
+    animation: appearAnimation 1s 2s forwards;
+  }
+  
+  .appear2 {
+    opacity: 0;
+    animation: appearAnimation 1s 3s forwards;
+  }
+
+  .appear3 {
+    opacity: 0;
+    animation: appearAnimation 1s 4s forwards;
+  }
+  
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appearAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+
+  @keyframes appearAnimationSlow {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
