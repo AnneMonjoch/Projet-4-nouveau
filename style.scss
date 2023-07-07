@@ -96,7 +96,15 @@ time, mark, audio, video {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: reverse
 }
-
+@keyframes rolling {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 
 
@@ -461,7 +469,7 @@ header {
 
 .icon-coeur > .fas {
     position: absolute;
-    left: 0;
+    left: 0; 
     color: transparent;
 }
 
@@ -470,11 +478,8 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
-}
-
-.coeur:hover {
-    color: transparent;
-    display: block;
+    bottom: 2.9px;
+    margin-top: 5px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -501,8 +506,6 @@ header {
         align-items: center;
     }
 	  }
-	
-	 
 	
  }
 

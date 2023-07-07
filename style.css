@@ -80,6 +80,11 @@ time, mark, audio, video {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: reverse; }
 
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -345,11 +350,9 @@ header {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1; }
-
-.coeur:hover {
-  color: transparent;
-  display: block; }
+  opacity: 1;
+  bottom: 2.9px;
+  margin-top: 5px; }
 
 @media screen and (min-width: 1440px) {
   .restaurants .wrap {

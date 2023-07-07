@@ -64,6 +64,9 @@
     .menu > h2 {
       margin-left: 250px; }
 
+  section > h2 {
+    margin-left: 250px; }
+
   .wrap {
     width: 60%;
     margin: auto; }
@@ -207,16 +210,40 @@
 
 /* Animation apparition progressive vers le haut */
 /* Animation Rolling */
-@keyframes rolling {
-  from {
-    transform: rotate(-180deg); } }
-@-moz-keyframes rolling {
-  from {
-    rotate: -180deg; }
-  to {
-    rotate: none; } }
-@-webkit-keyframes rolling {
-  from {
-    -webkit-transform: rotate(-180deg); } }
+.container {
+  opacity: 0;
+  animation: fadein 1s forwards; }
+
+.appear {
+  opacity: 0;
+  animation: appearAnimation 1s 2s forwards; }
+
+.appear2 {
+  opacity: 0;
+  animation: appearAnimation 1s 3s forwards; }
+
+.appear3 {
+  opacity: 0;
+  animation: appearAnimation 1s 4s forwards; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes appearAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes appearAnimationSlow {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=stylemenu.css.map */
