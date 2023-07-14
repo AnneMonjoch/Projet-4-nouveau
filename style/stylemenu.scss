@@ -1,5 +1,7 @@
 
 
+
+
 .bouton-precedent {
     color: black;
     font-size: 25px;
@@ -96,14 +98,15 @@
 
     section {
         & > h2 {
-            margin-left: 250px;
+            margin-left: 100px;
             
         }
     }
 
     .wrap  {
-        width: 60%;
         margin: auto;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .rectangle {
         margin-left: 250px;
@@ -126,13 +129,15 @@
     background-color: #99E2D0;
     margin-top: -12px;
     margin-bottom: 30px;
+    margin-left: 100px;
   }
 
   
 .affichage-droite {
     float: right;
-    margin-top: 1px;
     position: relative;
+    margin-top: 2px;
+    
 }
 
 .icon-coeur > .fas {

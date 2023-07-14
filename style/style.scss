@@ -107,7 +107,6 @@ time, mark, audio, video {
   
 
 
-
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -324,7 +323,7 @@ header {
 		flex-direction: row;
         gap: 20px;
         justify-content: center;
-        margin-left: 100px;
+        
 	}
 
     .restaurants {
@@ -335,8 +334,8 @@ header {
 
 	.etape-fonctionnement {
 		margin-right: 50px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 90px;
+        padding-right: 90px;
 	}
 
     .liste-footer {
@@ -583,7 +582,6 @@ a[href="mailto:exemple@ohmyfood.fr?subject=Contact"] {
 	color: white;
 	text-decoration: none;
 }
-
 
 
 
