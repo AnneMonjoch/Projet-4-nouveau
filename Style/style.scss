@@ -107,7 +107,6 @@ time, mark, audio, video {
   
 
 
-
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -131,7 +130,6 @@ header {
 @media screen and (min-width: 1440px) {
     .logo-ohmyfood {
         width: 19%; 
-		margin-top: 20px;
 		margin-bottom: 20px;
         
     }
@@ -325,7 +323,7 @@ header {
 		flex-direction: row;
         gap: 20px;
         justify-content: center;
-        margin-left: 100px;
+        
 	}
 
     .restaurants {
@@ -336,8 +334,8 @@ header {
 
 	.etape-fonctionnement {
 		margin-right: 50px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 90px;
+        padding-right: 90px;
 	}
 
     .liste-footer {
@@ -465,6 +463,7 @@ header {
 
 .affichage-droite {
     position: relative;
+    margin-top: 0 !important;
 }
 
 .icon-coeur > .fas {

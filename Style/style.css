@@ -104,7 +104,6 @@ header {
 @media screen and (min-width: 1440px) {
   .logo-ohmyfood {
     width: 19%;
-    margin-top: 20px;
     margin-bottom: 20px; } }
 /* Bloc Localisation */
 .localisation {
@@ -238,16 +237,15 @@ header {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: center;
-    margin-left: 100px; }
+    justify-content: center; }
 
   .restaurants > h2 {
     margin-left: 150px !important; }
 
   .etape-fonctionnement {
     margin-right: 50px;
-    padding-left: 60px;
-    padding-right: 60px; }
+    padding-left: 90px;
+    padding-right: 90px; }
 
   .liste-footer {
     display: flex;
@@ -339,7 +337,8 @@ header {
   border-top-right-radius: 1rem; }
 
 .affichage-droite {
-  position: relative; }
+  position: relative;
+  margin-top: 0 !important; }
 
 .icon-coeur > .fas {
   position: absolute;
